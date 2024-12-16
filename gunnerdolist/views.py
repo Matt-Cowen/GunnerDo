@@ -49,7 +49,7 @@ def update_task(request, pk):
         return redirect('/')
 
     return render(request,
-                  'tasks/update_task.html',
+                  'gunnerdolist/update_task.html',
                   {'task_form': form, })
 
 
@@ -68,7 +68,7 @@ def delete_task(request, pk):
         return redirect('/')
 
     return render(request,
-                  'tasks/delete_task.html',
+                  'gunnerdolist/delete_task.html',
                   {'task': task, })
 
 

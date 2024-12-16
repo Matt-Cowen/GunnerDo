@@ -41,8 +41,7 @@
                         <tr>
                             <td id="task-name">{{task}} </td>
                             <td id="task-importance">{{task.get_importance_display}}</td>
-                            <td id="task-status"><label for="task_{{ task.id }}">
-                                </label></td>
+                            <td id="task-progress" data-progress-id="{{ task.id }}">{{task.get_progress_display}}</td>
                             <td id="update-item">
                                 <a href="{% url 'update task' task.id %}">
                                     <span class="link-text">Update</span>
