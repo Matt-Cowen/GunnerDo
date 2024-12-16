@@ -1,5 +1,11 @@
 {% load static %}
-
+{% url 'home' as home_url %}
+{% url 'tasks' as taskpage_url %}
+{% url 'update_task' as update_url%}
+{% url 'delete_task' as delete_url%}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+{% url 'account_logout' as logout_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,35 +38,35 @@
             <ul class="navbar-nav navbar-content">
                 <li class="nav-item">
                     <a class="nav-link {% if request.path == home_url %}active{% endif %}"
-                        href="{% url 'home' %}">Home</a>
+                        href="">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if request.path == library_url %}active{% endif %}"
-                        href="{% url 'library' %}">Recipe Library</a>
+                        href="">Recipe Library</a>
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
                     <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'my_recipes' %}">My Recipe Book</a>
+                        href="">My Recipe Book</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link {% if request.path == submit_recipe_url %}active{% endif %}"
-                    href="{% url 'submit_recipe' %}">Add Recipe</a>
+                    href="">Add Recipe</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'account_logout' %}">Logout</a>
+                        href="">Logout</a>
                 </li>
 
 
                 {% else %}
                 <li class="nav-item">
                     <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'account_signup' %}">Register</a>
+                        href="">Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'account_login' %}">Login</a>
+                        href="">Login</a>
                 </li>
                 {% endif %}
 

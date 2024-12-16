@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--Search Bar-->
+
+<!-- Header -->
+<div class="header-bar">
+    <h2>Hello {{request.user}}</h2>
+</div>
+<!-- New task form -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 p-0 new-task mx-auto text-center">
+            <div class="wrapper">
+                {% if user.is_authenticated %}
+                <form method="POST">
+                    {% csrf_token %}
+                    {{task_form}}
+                    <button type="submit" class="btn" aria-label="Submit New Task">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- To-Do task list -->
+    <h1 class="text-center">Your Tasks:</h1>
+    <div class="row">
+        <div class="col-12 p-0 mx-auto task-list ">
+            <div class="wrapper table-responsive">
+                <table class="table">
+                    <tr>
+                        <th>Tasks</th>
+                        <th>Importance</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                        <th></th>
+                    </tr>
+                    {% for task in tasks %}
+                    <tbody>
+                        <tr>
+                            <td id="task-name">{{task}} </td>
+                            <td id="task-importance">{{task.get_importance_display}}</td>
+                            <td id="task-status"><label for="task_{{ task.id }}">
+                                </label></td>
+                            <td id="update-item">
+                                <a href="{% url 'update task' task.id %}">
+                                    <span class="link-text">Update</span>
+                                    <i class="fas fa-edit icon"></i>
+                                </a>
+                            </td>
+                            <td id="delete-item">
+                                <a href="{% url 'delete task' task.id %}">
+                                    <span class="link-text">Delete</span>
+                                    <i class="fas fa-trash-alt icon"></i>
+                                </a>
+                            </td>
+                            {% endfor %}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<p> Login or register to begin</p>
+{% endif %}
+
+{% endblock %}

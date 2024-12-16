@@ -7,6 +7,12 @@ from .forms import TaskForm
 
 # Create your views here.
 
+class HomeView(generic.TemplateView):
+
+    template_name = "gunnerdolist/index.html"
+
+
+
 @login_required
 def task_details(request):
 
@@ -23,7 +29,7 @@ def task_details(request):
     form = TaskForm()
 
     return render(request,
-                  'tasks/index.html', {'tasks': tasks, 'task_form': form, })
+                  'gunnerdolist/taskpage.html', {'tasks': tasks, 'task_form': form, })
 
 def update_task(request, pk):
 
