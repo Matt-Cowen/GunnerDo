@@ -1,22 +1,41 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends "base.html" %}
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Signup" %}{% endblock head_title %}
+{% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+<div class="container">
+    <div class="row">
+       <!-- Sign-Up Form -->
+<div class="col-md-8 mt-3 offset-md-2">
+    <h3 id="signup-header">{% trans "Sign Up" %}</h3>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+    <p>{% blocktrans %}Welcome back to Gunner Do. Do you already have an account? Then please <a class="link" href="{{ login_url }}" aria-label="Sign in to your account">sign in</a> instead.{% endblocktrans %}</p>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-8 mt-3 offset-md-2">
+        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}" role="form" aria-labelledby="signup-header">
+            {% csrf_token %}
+            
+            <!-- Displaying the form fields -->
+            <fieldset>
+                <legend class="sr-only">{% trans "Sign Up Form Fields" %}</legend>
+                {{ form.as_p }}
+            </fieldset>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+            {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            
+            <!-- Submit button -->
+            <button class="btn btn-signup right" type="submit" aria-label="{% trans 'Submit Sign Up Form' %}">{% trans "Sign Up" %} &raquo;</button>
+        </form>
+    </div>
+</div>
+    </div>
+</div>
+<br>
 
-{% endblock content %}
+{% endblock %}
