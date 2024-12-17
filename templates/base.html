@@ -28,47 +28,40 @@
 
 <!--Navbar-->
 
-    <nav class="navbar navbar-light navbar-expand-lg navbar-bg">
-        <a class="navbar-brand" id="logo-text" href="{% url 'home' %}"></a>
-        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mt-2" id="navbarNav">
-            <ul class="navbar-nav navbar-content">
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == home_url %}active{% endif %}"
-                        href="">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == library_url %}active{% endif %}"
-                        href="">Recipe Library</a>
-                </li>
-                {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                        href="">My Recipe Book</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link {% if request.path == submit_recipe_url %}active{% endif %}"
-                    href="">Add Recipe</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                        href="">Logout</a>
-                </li>
+<nav class="navbar navbar-light navbar-expand-lg navbar-bg">
+    <a class="navbar-brand" id="logo-text" href="{% url 'home' %}"></a>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-2" id="navbarNav">
+        <ul class="navbar-nav navbar-content">
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == home_url %}active{% endif %}"
+                    href="{% url 'home' %}">Home</a>
+            </li>
+
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == library_url %}active{% endif %}"
+                    href="{% url 'tasks' %}">Tasks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
+                    href="{% url 'account_logout' %}">Logout</a>
+            </li>
 
 
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                        href="">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
-                        href="">Login</a>
-                </li>
-                {% endif %}
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                    href="{% url 'account_signup' %}">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
+                    href="{% url 'account_login' %}">Login</a>
+            </li>
+            {% endif %}
 
             </ul>
             {% if user.is_authenticated %}
