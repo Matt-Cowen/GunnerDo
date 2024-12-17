@@ -31,6 +31,7 @@
                 <table class="table">
                     <tr>
                         <th>Tasks</th>
+                        <th>Notes</th>
                         <th>Importance</th>
                         <th>Status</th>
                         <th>Action</th>
@@ -40,16 +41,17 @@
                     <tbody>
                         <tr>
                             <td id="task-name">{{task}} </td>
+                            <td id="task-notes">{{task.notes}}</td>
                             <td id="task-importance">{{task.get_importance_display}}</td>
                             <td id="task-progress" data-progress-id="{{ task.id }}">{{task.get_progress_display}}</td>
                             <td id="update-item">
-                                <a href="{% url 'update task' task.id %}">
+                                <a href="{% url 'update_task' task.id %}">
                                     <span class="link-text">Update</span>
                                     <i class="fas fa-edit icon"></i>
                                 </a>
                             </td>
                             <td id="delete-item">
-                                <a href="{% url 'delete task' task.id %}">
+                                <a href="{% url 'delete_task' task.id %}">
                                     <span class="link-text">Delete</span>
                                     <i class="fas fa-trash-alt icon"></i>
                                 </a>
