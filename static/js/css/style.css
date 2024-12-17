@@ -1,0 +1,8 @@
+
+
+/* home page */
+.carousel img {
+    width: 100%;
+    height: auto; /* Automatically adjusts the height to maintain aspect ratio */
+    max-height: 300px; /* Optional: Limit the maximum height of images */
+}
