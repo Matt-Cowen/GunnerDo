@@ -1,5 +1,11 @@
 /* general styling */
-
+body{
+  /* background-image:url(https://thumbs.dreamstime.com/b/abstract-red-white-gold-fluid-art-painting-luxury-background-texture-324953411.jpg); */
+  background-image: url(/static/images/taylor-wright-OpsIFjzqDXE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 /* home page */
 .carousel-inner .carousel-item img {
     width: 100%;             /* Stretch the image to fill the container's width */
@@ -8,25 +14,34 @@
     display: block;          /* Remove any unwanted space below the image */
 }
 
-.carousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 
-  .slogan {
-    border: 1px solid red; 
+  .slogan, .login, .logout, .signup{
+    border: 1px ; 
     padding: 15px;              /* Add padding inside the border */
     border-radius: 10px;        /* Rounded corners */
+    background-color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Dark Shadow Inside */
   }
 
-
+ 
   /* media queries */
 
   /* Media query for smaller screens (Mobile devices) */
 @media (max-width: 767px) {
     .carousel-inner {
-        height: 200px; /* Adjust the height for mobile */
+        height: 300px; /* Adjust the height for mobile */
     }
+    .carousel-caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      color: white;
+      text-align: center;
+      font-size: 1.2em;
+  }
+  .carousel-inner .carousel-item img{
+    height:300px;
+  }
 }

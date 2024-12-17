@@ -12,14 +12,14 @@
     <div class="row ">
       
         <!-- Log-in form -->
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center login">
             <h3>{% trans "Sign In" %}</h3>
 
             <p>{% blocktrans %}Welcome back to Gunner Do. To get started please log in. If
                 you
                 have not created an account yet, then <a class="link" href="{{ signup_url }}" aria-label="Sign up for a new account">sign up</a>
                 first.{% endblocktrans %}</p>
-            <form class="login" method="POST" action="{% url 'account_login' %}">
+            <form  method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
