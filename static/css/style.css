@@ -1,4 +1,4 @@
-
+/* general styling */
 
 /* home page */
 .carousel-inner .carousel-item img {
@@ -8,24 +8,25 @@
     display: block;          /* Remove any unwanted space below the image */
 }
 
-.carousel-inner .carousel-item {
+.carousel{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    height: 400px;  /* Ensure the carousel inner container has a fixed height */
-}
-
-#carouselExampleCaptions {
-    height: 400px;
-  }
-
-  p {
-    border: 3px dashed #3498db; /* Blue dashed border */
+  .slogan {
+    border: 1px solid red; 
     padding: 15px;              /* Add padding inside the border */
     border-radius: 10px;        /* Rounded corners */
   }
+
+
+  /* media queries */
+
+  /* Media query for smaller screens (Mobile devices) */
+@media (max-width: 767px) {
+    .carousel-inner {
+        height: 200px; /* Adjust the height for mobile */
+    }
+}
