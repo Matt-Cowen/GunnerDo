@@ -25,7 +25,7 @@ def task_details(request):
             task.user = request.user
             task.progress = 1
             task.save()
-            return redirect('/')
+            return redirect('tasks')
     form = TaskForm()
 
     return render(request,
@@ -46,7 +46,7 @@ def update_task(request, pk):
         else:
             messages.add_message(request, messages.ERROR,
                                  'Error updating comment!')
-        return redirect('/')
+        return redirect('tasks')
 
     return render(request,
                   'gunnerdolist/update_task.html',
