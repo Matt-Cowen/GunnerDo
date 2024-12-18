@@ -65,7 +65,7 @@ def delete_task(request, pk):
         else:
             messages.add_message(request, messages.ERROR,
                                  'You can only delete your own task!')
-        return redirect('/')
+        return redirect('tasks')
 
     return render(request,
                   'gunnerdolist/delete_task.html',

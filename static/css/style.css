@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 /* general styling */
+
 body{
   /* background-image:url(https://thumbs.dreamstime.com/b/abstract-red-white-gold-fluid-art-painting-luxury-background-texture-324953411.jpg); */
   background-image: url(/static/images/taylor-wright-OpsIFjzqDXE-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Arsenal', sans-serif;
   
 }
 
@@ -111,7 +112,7 @@ footer {
 
 
 
-  .slogan, .login, .logout, .signup{
+  .slogan, .login, .logout, .signup, .new-task, .task-list{
     border: 1px ; 
     padding: 15px;              /* Add padding inside the border */
     border-radius: 10px;        /* Rounded corners */
@@ -119,7 +120,13 @@ footer {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Dark Shadow Inside */
   }
 
- 
+ /* task-page */
+
+ .blue-heading {
+    color: aquamarine;
+ }
+
+
   /* media queries */
 
   /* Media query for smaller screens (Mobile devices) */

@@ -13,7 +13,8 @@
             <form method="POST">
                 {% csrf_token %}
                 {{task_form}}
-                <button type="submit" class="btn" aria-label="Submit Updated Task">Update</button>
+            <button type="submit" class="btn btn-danger" aria-label="Submit Updated Task">Update</button>
+            <a class="btn btn-light" href="{% url 'tasks' %}">Cancel</a>
             </form>
             <p>{{task.created_on}}</p>
         </div>

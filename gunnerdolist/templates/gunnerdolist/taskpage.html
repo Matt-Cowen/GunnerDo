@@ -7,7 +7,7 @@
 
 <!-- Header -->
 <div class="header-bar">
-    <h2>Hello {{request.user}}</h2>
+    <h2 class="blue-heading">Hello {{request.user}}</h2>
 </div>
 <!-- New task form -->
 <div class="container">
@@ -15,16 +15,16 @@
         <div class="col-12 p-0 new-task mx-auto text-center">
             <div class="wrapper">
                 {% if user.is_authenticated %}
-                <form method="POST">
+                <form method="POST" class="mx-auto pt-4 pb-4">
                     {% csrf_token %}
                     {{task_form}}
-                    <button type="submit" class="btn" aria-label="Submit New Task">Submit</button>
+                    <button type="submit" class="btn btn-danger" aria-label="Submit New Task">Submit</button>
                 </form>
             </div>
         </div>
     </div>
     <!-- To-Do task list -->
-    <h1 class="text-center">Your Tasks:</h1>
+    <h1 class="text-center white-heading"></h1>
     <div class="row">
         <div class="col-12 p-0 mx-auto task-list ">
             <div class="wrapper table-responsive">
