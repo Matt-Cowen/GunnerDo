@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 /* general styling */
 body{
   /* background-image:url(https://thumbs.dreamstime.com/b/abstract-red-white-gold-fluid-art-painting-luxury-background-texture-324953411.jpg); */
@@ -6,6 +9,82 @@ body{
   background-size: cover;
   
 }
+
+
+
+
+/* Navbar */
+
+.navbar{
+  border-bottom: 2px solid #fff;
+  color: white;
+  font-weight: 600;
+  background-color: #ef0001;
+  text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
+
+}
+
+.nav-item a {
+  color: white !important;
+}
+
+
+.navbar-nav {
+  margin-left: 10px;
+}
+
+.navbar-brand{
+  background-image: url(../images/Gunnerdologo.jpg);
+  background-size: contain;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-left: 15px;
+  border-radius: 25%;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+  
+}
+
+.navbar-user {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+
+
+/* Footer */
+
+footer {
+  border: none;
+  background-color: #ef0001 !important;
+  color: #fafae9;
+  text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
+}
+
+
+.footer-links {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0 !important;
+}
+
+.footer-links > li {
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.social-link {
+
+  text-decoration: none;
+  color: #fafae9;
+  text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
+}
+
+
+
+
 /* home page */
 .carousel-inner .carousel-item img {
     width: 100%;             /* Stretch the image to fill the container's width */
