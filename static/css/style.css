@@ -126,21 +126,7 @@ footer {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Dark Shadow Inside */
   }
 
-  .home-box {
-    flex-grow: 1; /* Make the carousel fill the full height of its column */
-  }
-  
-  .home-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  .home-row{
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Enable Flexbox */
-    align-items: stretch; /* Ensure columns stretch to fill the height */
-  }
+ 
  /* task-page */
 
  .blue-heading, .logout-heading, .signup-heading, .login-heading, .homepage-heading{
