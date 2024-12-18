@@ -9,8 +9,8 @@
       This action cannot be undone.</p>
   <form method="POST">
     {% csrf_token %}
-    <button type="submit" class="btn" aria-label="Delete Task">Delete</button>
-    <a class="btn" href="{% url 'tasks' %}">Cancel</a>
+    <button type="submit" class="btn btn-danger" aria-label="Delete Task">Delete</button>
+    <a class="btn btn-light" href="{% url 'tasks' %}">Cancel</a>
     </form>
   </div>
     {% endblock %}

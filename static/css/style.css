@@ -29,6 +29,9 @@ body{
 
  /* task-page */
 
+ .blue-heading {
+    color: aquamarine;
+ }
 
 
   /* media queries */
