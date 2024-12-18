@@ -12,7 +12,7 @@ class Task(models.Model):
         User, on_delete=models.CASCADE, related_name="user"
     )
     name = models.CharField(max_length=200)
-    notes = models.TextField(default="Tactics...", null=True, blank=True)
+    notes = models.TextField(default="Tactics...", null=True, blank=True, max_length=300)
     progress = models.IntegerField(choices=PROGRESS, default=1)
     importance = models.IntegerField(choices=STATUS, default=2)
     created_on = models.DateTimeField(auto_now_add=True)
