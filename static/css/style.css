@@ -16,7 +16,6 @@ body{
 /* Navbar */
 
 .navbar{
-  border-bottom: 2px solid #fff;
   color: white;
   font-weight: 600;
   background-color: #ef0001;
@@ -82,6 +81,23 @@ footer {
   text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
 }
 
+
+
+/* Alerts */
+
+
+
+.alert {
+  border: none;
+  text-align: center;
+  color: #fafae9;
+  text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
+}
+
+.alert-success {
+  background-color: #ef0001 ;
+
+}
 
 
 
