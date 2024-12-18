@@ -37,27 +37,29 @@
                         <th>Action</th>
                         <th></th>
                     </tr>
-                    {% for task in tasks %}
+                    
                     <tbody>
+                        {% for task in tasks %}
                         <tr>
                             <td id="task-name">{{task}} </td>
                             <td id="task-notes">{{task.notes}}</td>
                             <td id="task-importance">{{task.get_importance_display}}</td>
                             <td id="task-progress" data-progress-id="{{ task.id }}">{{task.get_progress_display}}</td>
-                            <td id="update-item">
+                            <td class="update-item">
                                 <a href="{% url 'update_task' task.id %}">
                                     <span class="link-text">Update</span>
-                                    <i class="fas fa-edit icon"></i>
+                                    <i class="d-none d-md-inline-block fas fa-edit update-icon"></i>
                                 </a>
                             </td>
-                            <td id="delete-item">
+                            <td class="delete-item">
                                 <a href="{% url 'delete_task' task.id %}">
                                     <span class="link-text">Delete</span>
-                                    <i class="fas fa-trash-alt icon"></i>
+                                    <i class="d-none d-md-inline-block fas fa-trash-alt icon"></i>
                                 </a>
                             </td>
-                            {% endfor %}
+                           
                         </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>

@@ -3,10 +3,8 @@
 /* general styling */
 
 body{
-  /* background-image:url(https://thumbs.dreamstime.com/b/abstract-red-white-gold-fluid-art-painting-luxury-background-texture-324953411.jpg); */
-  background-image: url(/static/images/taylor-wright-OpsIFjzqDXE-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(/static/images/taylor-wright-OpsIFjzqDXE-unsplash.jpg) repeat center center/cover;
+  position: relative;
   font-family: 'Arsenal', sans-serif;
   
 }
@@ -21,6 +19,7 @@ body{
   font-weight: 600;
   background-color: #ef0001;
   text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
+  letter-spacing: 2px;
 
 }
 
@@ -93,6 +92,7 @@ footer {
   text-align: center;
   color: #fafae9;
   text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
+  letter-spacing: 2px;
 }
 
 .alert-success {
@@ -108,11 +108,17 @@ footer {
     height: 400px;           /* Set a fixed height (adjust as needed) */
     object-fit: cover;       /* Ensure images cover the space without stretching */
     display: block;          /* Remove any unwanted space below the image */
+    border-radius: 10px;
+}
+
+.carousel-caption{
+  background-color: rgba(220, 8, 15, 0.5);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 
-
-  .slogan, .login, .logout, .signup, .new-task, .task-list{
+  .home-header, .login, .logout, .signup, .new-task, .task-list{
     border: 1px ; 
     padding: 15px;              /* Add padding inside the border */
     border-radius: 10px;        /* Rounded corners */
@@ -120,13 +126,31 @@ footer {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Dark Shadow Inside */
   }
 
+ 
  /* task-page */
 
- .blue-heading {
-    color: aquamarine;
+ .blue-heading, .logout-heading, .signup-heading, .login-heading, .homepage-heading{
+  color: white;
+  font-weight: 600;
+  text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
+  letter-spacing: 2px;
+  padding: 5px;
  }
+.update-item a{
+text-decoration: none;
+color: #9b814a;
+}
+.delete-item a{
+  text-decoration: none;
+  color: #ef0001;
+}
 
-
+.homepage-heading{
+  font-size: 6rem;
+}
+.home-header{
+  height: 100%;
+}
   /* media queries */
 
   /* Media query for smaller screens (Mobile devices) */
@@ -142,8 +166,25 @@ footer {
       color: white;
       text-align: center;
       font-size: 1.2em;
+      
   }
   .carousel-inner .carousel-item img{
     height:300px;
   }
+  table {width:80%;}
+  th {display: none;}
+  tr:nth-of-type(2n) {background-color: inherit;}
+  tr td:first-child {background:#9b814a; font-weight:bold;font-size:1.3em; text-align: center; padding: 10px 5px !important; }
+  tbody td {display: block;  text-align:center; padding: 10px 5px !important}
+  tbody td:before { 
+      content: attr(data-th); 
+      display: block;
+      text-align:center;  
+      padding: 10px 5px !important;
+  }
+
+  footer{
+    position: relative !important;
+  }
 }
+

@@ -10,10 +10,14 @@
 
 <div class="container my-10">
     <div class="row ">
-      
+      <div class="col-md-12 text-center">
+        <h1 class="login-heading">{% trans "Sign In" %}</h1>
+      </div>
+    </div>
         <!-- Log-in form -->
+         <div class="row">
         <div class="col-md-12 text-center login">
-            <h3>{% trans "Sign In" %}</h3>
+            
 
             <p>{% blocktrans %}Welcome back to Gunner Do. To get started please log in. If
                 you
@@ -25,7 +29,7 @@
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-signup right" type="submit" aria-label="{% trans 'Sign In' %}">{% trans "Sign In" %}</button>
+                <button class="btn btn-danger btn-signup right" type="submit" aria-label="{% trans 'Sign In' %}">{% trans "Sign In" %}</button>
             </form>
         </div>
        
