@@ -3,15 +3,58 @@
 ## UX
 The UX was developed with the target user in mind. The target is a wide net, and as such the UX had to be accessible and attractive to a wide range of user.
 
-The users will be looking for:
+User Story 1: 
+User Registration and Login
+As a user, I want to create an account and log in so that I can save my tasks and access them from any device.
+Acceptance Criteria:
+- A "Sign Up" form includes fields for username, email, and password.
+- 	A "Login" form requires a username/email and password.
+- 	Logged-in users see only their personal task list.
+- 	Tasks are stored in the database and persist across sessions.
 
-An easy to navigate site, with clear signposting for browsing, uploading and saving recipes
-The ability to sign up to add and save recipes.
-The ability to collect recipes that they like into their own dedicated recipe book.
-the ability to edit and recipes that they have submitted.
-The site admin will be looking for:
+User Story 2: Add a Task
+As a user, I want to add a task to my to-do list so that I can keep track of things I need to complete.
+Acceptance Criteria:
+- The user can input a task name into a text field.
+- A "Add Task" button is present and clickable.
+- After clicking the "Add Task" button:
+- The new task is displayed in the task list.
+- The task has a checkbox for marking it as complete.
+- The input field is cleared for a new task.
 
-an easy and intuitive way of managing content and users on the site.
+User Story 3: View Tasks
+As a user, I want to view all tasks in my to-do list so that I can see what needs to be done.
+Acceptance Criteria:
+- The website displays a list of all tasks in chronological order of creation.
+- Tasks include their title and a checkbox to mark completion.
+- If no tasks are present, a message is displayed (e.g., "No tasks added yet").
+
+User Story 3: Edit a Task
+As a user, I want to edit a task in my to-do list so that I can update its details.
+Acceptance Criteria:
+- Each task has an "Edit" button.
+- Clicking the "Edit" button opens a text input pre-filled with the task's current title.
+- The user can modify the task name and save the changes by clicking "Save".
+-	The updated task is displayed in the list.
+-	If the user cancels editing, the task remains unchanged.
+
+User Story 4: Delete a Task
+As a user, I want to delete a task from my to-do list so that I can remove tasks I no longer need to complete.
+Acceptance Criteria:
+-	Each task has a "Delete" button.
+-	Clicking the "Delete" button removes the task from the list.
+-	A confirmation message appears before deletion (e.g., "Are you sure you want to delete this task?").
+-	The task is no longer displayed after deletion.
+
+User Story 5: Mark a Task as Complete
+As a user, I want to mark a task as complete so that I can track my progress.
+Acceptance Criteria:
+-	Each task has a checkbox next to its title.
+-	Clicking the checkbox marks the task as complete:
+-	The task title is visually updated (e.g., strike-through or gray text).
+-	The status of the task is updated in the database.
+-	Clicking the checkbox again marks the task as incomplete.
+
 
 ## Scope
 Site Features
