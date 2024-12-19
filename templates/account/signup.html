@@ -21,7 +21,7 @@
 </div>
 <div class="row">
     <div class="col-md-8 mt-3 offset-md-2 signup">
-        <form  id="signup_form" method="post" action="{% url 'account_signup' %}" role="form" aria-labelledby="signup-header">
+        <form  id="signup_form" method="post" action="{% url 'account_signup' %}">
             {% csrf_token %}
             
             <!-- Displaying the form fields -->
