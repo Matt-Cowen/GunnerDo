@@ -1,5 +1,8 @@
 <h1> Gunner Do </h1>
 
+
+The goal of Gunner Do is to provide users with a dynamic, game-inspired interface that enhances productivity while keeping tasks organized. By incorporating an "Arsenal" theme, the app allows users to "Write up tactics" for their tasks and "Score" when a task is marked as completed, turning everyday tasks into a more engaging, goal-oriented experience. The design is focused on offering a fun, gamified approach to task management, motivating users to complete their goals through visual rewards and engaging features.
+
 ## UX
 The UX was developed with the target user in mind. The target is a wide net, and as such the UX had to be accessible and attractive to a wide range of user.
 
