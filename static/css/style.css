@@ -127,7 +127,7 @@ footer {
  
  /* task-page */
 
- .blue-heading, .logout-heading, .signup-heading, .login-heading, .homepage-heading{
+ .blue-heading, .logout-heading, .signup-heading, .login-heading, .homepage-heading, .update-heading{
   color: white;
   font-weight: 600;
   text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;

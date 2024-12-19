@@ -173,7 +173,7 @@ color: #9b814a;
   position: absolute;
   right: -4%;
   bottom: 0%;
-  transform: scaleX(80%);
+  transform: scaleX(0.8);
   width: 400px;
   height: 180px;
   border: none;
