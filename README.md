@@ -15,6 +15,7 @@ Acceptance Criteria:
 User Story 2: Add a Task
 As a user, I want to add a task to my to-do list so that I can keep track of things I need to complete.
 Acceptance Criteria:
+
 - The user can input a task name into a text field.
 - A "Add Task" button is present and clickable.
 - After clicking the "Add Task" button:
@@ -77,6 +78,15 @@ The footer, present on all pages, comprises of copyright information on the left
 -  The app offers an intuitive interface that simplifies task management, with a clean design and minimal distractions for easy navigation.
 
 ## Wireframes
+![Screenshot 2024-12-16 at 14 22 45](https://github.com/user-attachments/assets/6a8a8551-168d-4f42-b6dc-fc398aa83570)
+
+![Screenshot 2024-12-19 at 13 50 02](https://github.com/user-attachments/assets/3f947c65-ffed-436b-9eae-443356be4b18)
+
+![Screenshot 2024-12-19 at 13 49 24](https://github.com/user-attachments/assets/bb2e8b5d-d454-
+
+![Screenshot 2024-12-19 at 13 49 34](https://github.com/user-attachments/assets/564b00f9-edc3-495b-9b01-c0e48f8d52af)
+416c-8828-336e829243b9)
+
 ## Database Schema
 
 Before I set to migrating any models to my database, I created an entity relationship diagram to help me see how the models would link together.
