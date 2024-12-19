@@ -116,6 +116,18 @@ The entity relationship diagrams were created using dbdiagram.io.
 
 ![ERD](/media/ERD%20GunnerDo.png)
 
+## Agile Methodology
+
+For the development of Gunner Do, I followed an Agile methodology to ensure iterative and efficient progress throughout the project's lifecycle. A key part of this process was leveraging a Kanban board on GitHub Projects, which you can view <a> https://github.com/users/Matt-Cowen/projects/5 </a>
+
+![Screenshot 2024-12-19 at 15 18 12](https://github.com/user-attachments/assets/19125a1d-6ab6-4a00-a16e-8cdc8fc2e87f)
+
+
+To Do: This column housed tasks and user stories that had been identified but were awaiting development.
+In Progress: This column tracked tasks currently being worked on
+
+Complete: This column lists tasks that have been finished and are awaiting for review or testing, highlighting progress and maintaining a log of completed work.
+
 ## Testing
 
 ### Code Validation
