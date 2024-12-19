@@ -6,6 +6,7 @@ body{
   background: url(/static/images/taylor-wright-OpsIFjzqDXE-unsplash.jpg) repeat center center/cover;
   position: relative;
   font-family: 'Arsenal', sans-serif;
+  
 }
 
 
@@ -19,6 +20,7 @@ body{
   background-color: #ef0001;
   text-shadow: -1px -1px 0 #9b814a, 1px -1px 0 #9b814a, -1px 1px 0 #9b814a, 1px 1px 0 #9b814a;
   letter-spacing: 2px;
+
 }
 
 .nav-item a {
@@ -149,93 +151,6 @@ color: #9b814a;
 .home-header{
   height: 100%;
 }
-
-/* animation container */
-.container {
-  text-align: center;
-  position: relative;
-}
-
-/* Goal Styling */
-.goal {
-  position: relative;
-  width: 900px;
-  height: 200px;
-  margin: 20px auto;
-  background-color: #006d00;
-  z-index: 1;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.goal::after {
-  content: "";
-  position: absolute;
-  right: -4%;
-  bottom: 0%;
-  transform: scaleX(80%);
-  width: 400px;
-  height: 180px;
-  border: none;
-  background: url("../images/goal.png") no-repeat center center/cover;
-  border-radius: 5px;
-  z-index: 2;
-}
-
-/* Football Styling */
-.football {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: url("../images/football.png") no-repeat center center/cover;
-  background-blend-mode: overlay;
-  z-index: 10;
-  transition: transform 1s ease-out; /* Smooth animation */
-}
-
-/* Result Text */
-.result {
-  margin: 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Modal container - hidden by default */
-.modal {
-  display: none;
-  /* Hidden initially */
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  /* Full width */
-  height: 100vh;
-  /* Full height */
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Semi-transparent background */
-  justify-content: center;
-  align-items: center;
-}
-
-/* Modal content */
-.modal-content {
-  background: linear-gradient(45deg, black, red, gold);
-  z-index: 10000;
-  position: relative; /* Ensures modal content respects z-index */
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 90%; /* Adjust for responsiveness */
-  max-width: 1000px; /* Prevent it from being too wide */
-  margin: auto; /* Center horizontally */
-}
-
   /* media queries */
 
   /* Media query for smaller screens (Mobile devices) */

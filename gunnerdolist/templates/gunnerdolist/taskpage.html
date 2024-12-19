@@ -36,8 +36,11 @@
                         <th>Status</th>
                         <th>Action</th>
                         <th></th>
+                        {% if task.progress == 3 %}
+                        <th> </th>
+                        {% endif %}
                     </tr>
-                    
+
                     <tbody>
                         {% for task in tasks %}
                         <tr>
@@ -57,7 +60,12 @@
                                     <i class="d-none d-md-inline-block fas fa-trash-alt icon"></i>
                                 </a>
                             </td>
-                           
+                            {% if task.progress == 3 %}
+                            <td>
+                                <!-- Button to trigger the modal -->
+                                <button onclick="kickBall()" class="btn-primary modal-btn">Shoot!</button>
+                            </td>
+                            {% endif %}
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -65,7 +73,19 @@
             </div>
         </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="container modal-content">
+            <h1>Arsenal Scores!!!</h1>
+            <div class="goal" id="goal">
+                <div class="football" id="football"></div>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
 </div>
+
 {% else %}
 <p> Login or register to begin</p>
 {% endif %}
