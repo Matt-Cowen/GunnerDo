@@ -131,6 +131,8 @@ The entity relationship diagrams were created using dbdiagram.io.
 
 #### JS
 
+![Screenshot 2024-12-19 at 15 16 20](https://github.com/user-attachments/assets/28905934-1dd8-419c-9aee-34f65d2be64f)
+
 ### Manual Testing 
 All responsiveness and basic functionality of the site was tested manually, and ran into no issues.
 
@@ -143,6 +145,7 @@ Log in to GitHub and create a new repository, using the Code Institute template.
 Sign up for Heroku and create a new account.
 
 Create a new app and choose a suitable region for deployment.
+
 
 In the app settings, go to config vars and click "reveal config vars".
 
