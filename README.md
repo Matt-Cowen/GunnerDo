@@ -1,5 +1,6 @@
 <h1> Gunner Do </h1>
 
+![Screenshot 2024-12-19 at 17 06 37](https://github.com/user-attachments/assets/ffeb9651-165a-4b73-88c6-821318d2728d)
 
 The goal of Gunner Do is to provide users with a dynamic, game-inspired interface that enhances productivity while keeping tasks organized. By incorporating an "Arsenal" theme, the app allows users to "Write up tactics" for their tasks and "Score" when a task is marked as completed, turning everyday tasks into a more engaging, goal-oriented experience. The design is focused on offering a fun, gamified approach to task management, motivating users to complete their goals through visual rewards and engaging features.
 
@@ -14,6 +15,7 @@ Acceptance Criteria:
 - 	A "Login" form requires a username/email and password.
 - 	Logged-in users see only their personal task list.
 - 	Tasks are stored in the database and persist across sessions.
+
 
 User Story 2: Add a Task
 As a user, I want to add a task to my to-do list so that I can keep track of things I need to complete.
