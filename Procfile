@@ -1,1 +1,1 @@
-web: gunicorn vittler.wsgi
+web: gunicorn gunnerdo.wsgi
