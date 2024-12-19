@@ -116,17 +116,41 @@ The entity relationship diagrams were created using dbdiagram.io.
 
 ![ERD](/media/ERD%20GunnerDo.png)
 
+## Agile Methodology
+
+For the development of Gunner Do, I followed an Agile methodology to ensure iterative and efficient progress throughout the project's lifecycle. A key part of this process was leveraging a Kanban board on GitHub Projects, which you can view <a> https://github.com/users/Matt-Cowen/projects/5 </a>
+
+![Screenshot 2024-12-19 at 15 18 12](https://github.com/user-attachments/assets/19125a1d-6ab6-4a00-a16e-8cdc8fc2e87f)
+
+
+To Do: This column housed tasks and user stories that had been identified but were awaiting development.
+
+In Progress: This column tracked tasks currently being worked on.
+
+Complete: This column lists tasks that have been finished and are awaiting for review or testing, highlighting progress and maintaining a log of completed work.
+
 ## Testing
 
 ### Code Validation
 #### HTML
+
+![Screenshot 2024-12-19 at 14 53 33](https://github.com/user-attachments/assets/75ebd2a0-b623-440d-b812-60842c93722e)
+
+![Screenshot 2024-12-19 at 14 57 07](https://github.com/user-attachments/assets/1247f899-26ee-482a-ae36-3d1672f08d00)
+
 #### CSS
+
+![Screenshot 2024-12-19 at 15 07 56](https://github.com/user-attachments/assets/2cd1f29f-9eec-46e7-ae65-abb24f3f41f5)
+
 #### JS
+
+![Screenshot 2024-12-19 at 15 16 20](https://github.com/user-attachments/assets/28905934-1dd8-419c-9aee-34f65d2be64f)
 
 ### Manual Testing 
 All responsiveness and basic functionality of the site was tested manually, and ran into no issues.
 
 ## Deployment
+
 The site was deployed on Heroku and connected to GitHub for version control. This was done by following the below steps:
 
 Log in to GitHub and create a new repository, using the Code Institute template.
@@ -134,6 +158,7 @@ Log in to GitHub and create a new repository, using the Code Institute template.
 Sign up for Heroku and create a new account.
 
 Create a new app and choose a suitable region for deployment.
+
 
 In the app settings, go to config vars and click "reveal config vars".
 
