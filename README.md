@@ -52,18 +52,27 @@ All responsiveness and basic functionality of the site was tested manually, and 
 The site was deployed on Heroku and connected to GitHub for version control. This was done by following the below steps:
 
 Log in to GitHub and create a new repository, using the Code Institute template.
+
 Sign up for Heroku and create a new account.
+
 Create a new app and choose a suitable region for deployment.
+
 In the app settings, go to config vars and click "reveal config vars".
+
 The app requires configuration for the following variables: SECRET_KEY, DATABASE_URL, CLOUDINARY_URL. Assign the corresponding values from your project's env.py to these variables.
+
 Integrate Heroku with your GitHub by choosing the GitHub integration option in Heroku.
+
 Locate and select the GitHub repository you created earlier from the CI template.
+
 Choose manual deployment from the selected branch of your GitHub repository.
+
 Deploy by clicking the manual deploy button.
+
 Once deployed, the site is accessible through the live link provided at the top of the document.
 
 ## Technologies Used
-####Languages:
+#### Languages:
 - HTML5
 - CSS3
 - JavaScript
