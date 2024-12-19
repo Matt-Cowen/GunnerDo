@@ -52,19 +52,21 @@ function kickBall() {
   
   // Get the modal element and button
   const modal = document.getElementById("myModal");
-  const openModalBtn = document.getElementById("openModalBtn");
+  const modalButtons = document.querySelectorAll(".modal-btn");
   
-  // Function to open the modal and hide it after 3 seconds
-  openModalBtn.addEventListener("click", () => {
-    // Show the modal
-    modal.style.display = "flex";
-  
-    // Hide the modal after 3 seconds
-    setTimeout(() => {
-      modal.style.display = "none";
-    }, 3000); // 1000 milliseconds = 1 seconds
+  modalButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+
+      //show the modal
+      modal.style.display = "flex";
+
+      // Hide the modal after 3 seconds
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 3000); //1000 milliseconds = 1 seconds
+    });
   });
-  
+
   document.addEventListener("DOMContentLoaded", function () {
     const messages = document.getElementById("message-display");
     if (messages) {

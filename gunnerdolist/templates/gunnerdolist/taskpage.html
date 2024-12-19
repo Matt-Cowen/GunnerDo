@@ -63,7 +63,7 @@
                             {% if task.progress == 3 %}
                             <td>
                                 <!-- Button to trigger the modal -->
-                                <button id="openModalBtn" onclick="kickBall()" class="btn-primary">Shoot!</button>
+                                <button onclick="kickBall()" class="btn-primary modal-btn">Shoot!</button>
                             </td>
                             {% endif %}
                         </tr>
@@ -85,6 +85,7 @@
         </div>
     </div>
 </div>
+
 {% else %}
 <p> Login or register to begin</p>
 {% endif %}
