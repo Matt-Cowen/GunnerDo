@@ -182,6 +182,19 @@ color: #9b814a;
   z-index: 2;
 }
 
+.ball-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(185, 21, 21,);
+  background-blend-mode: overlay;
+  z-index: 20;
+  transition: transform 1s ease-out; /* Smooth animation */
+}
+
 /* Football Styling */
 .football {
   position: absolute;
@@ -193,7 +206,16 @@ color: #9b814a;
   background: url("../images/football.png") no-repeat center center/cover;
   background-blend-mode: overlay;
   z-index: 10;
-  transition: transform 1s ease-out; /* Smooth animation */
+  animation: spinBall linear infinite; /* Smooth animation */
+}
+
+@keyframes spinBall {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 }
 
 /* Result Text */
