@@ -120,13 +120,22 @@ The entity relationship diagrams were created using dbdiagram.io.
 
 ### Code Validation
 #### HTML
+
+![Screenshot 2024-12-19 at 14 53 33](https://github.com/user-attachments/assets/75ebd2a0-b623-440d-b812-60842c93722e)
+
+![Screenshot 2024-12-19 at 14 57 07](https://github.com/user-attachments/assets/1247f899-26ee-482a-ae36-3d1672f08d00)
+
 #### CSS
+
+![Screenshot 2024-12-19 at 15 07 56](https://github.com/user-attachments/assets/2cd1f29f-9eec-46e7-ae65-abb24f3f41f5)
+
 #### JS
 
 ### Manual Testing 
 All responsiveness and basic functionality of the site was tested manually, and ran into no issues.
 
 ## Deployment
+
 The site was deployed on Heroku and connected to GitHub for version control. This was done by following the below steps:
 
 Log in to GitHub and create a new repository, using the Code Institute template.
