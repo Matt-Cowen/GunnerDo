@@ -82,10 +82,10 @@ The footer, present on all pages, comprises of copyright information on the left
 
 ![Screenshot 2024-12-19 at 13 50 02](https://github.com/user-attachments/assets/3f947c65-ffed-436b-9eae-443356be4b18)
 
-![Screenshot 2024-12-19 at 13 49 24](https://github.com/user-attachments/assets/bb2e8b5d-d454-
+![Screenshot 2024-12-19 at 13 49 24](https://github.com/user-attachments/assets/bb2e8b5d-d454-416c-8828-336e829243b9)
 
 ![Screenshot 2024-12-19 at 13 49 34](https://github.com/user-attachments/assets/564b00f9-edc3-495b-9b01-c0e48f8d52af)
-416c-8828-336e829243b9)
+
 
 ## Database Schema
 
