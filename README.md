@@ -124,7 +124,8 @@ For the development of Gunner Do, I followed an Agile methodology to ensure iter
 
 
 To Do: This column housed tasks and user stories that had been identified but were awaiting development.
-In Progress: This column tracked tasks currently being worked on
+
+In Progress: This column tracked tasks currently being worked on.
 
 Complete: This column lists tasks that have been finished and are awaiting for review or testing, highlighting progress and maintaining a log of completed work.
 
