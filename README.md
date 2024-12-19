@@ -63,24 +63,41 @@ Acceptance Criteria:
 ## Scope
 Site Features
 1. Navigation Bar
+
+![Screenshot 2024-12-19 at 14 02 55](https://github.com/user-attachments/assets/1f71301e-37c1-4482-a871-1171312730a7)
+
 The navigation bar appears on every page so users can easily navigate through the site. It adds an active class to the current url for better UX.
 Navigation bar has links for "Home", "Tasks", "Register" and "Login" when there is no logged in user.
 Navigation bar has links for "Home", "Taks" and "Logout" when a user is logged in.
 If the user is logged in then their username will appear on the right hand side of the nav bar.
 The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size.
 
-2. Footer
+3. Footer
+
+![Screenshot 2024-12-19 at 14 03 15](https://github.com/user-attachments/assets/4913e99c-3f00-409e-9203-d9600718e2d6)
+
 The footer, present on all pages, comprises of copyright information on the left hand side, and social links on the right.
 
-3. Log-In Page / Register page:
+4. Log-In Page / Register page:
+
+![Screenshot 2024-12-19 at 14 03 49](https://github.com/user-attachments/assets/25809bad-17a7-4e0b-ac7c-db9cd7014c79)
+
 - Gunner Do utilizes AllAuth for secure user authentication and authorization, allowing users to easily create accounts and log in to access their personalized to-do lists.
 
+
 4. Task List page:
+
+![Screenshot 2024-12-19 at 14 06 12](https://github.com/user-attachments/assets/88492c87-f143-4f6d-a83a-42c9c9835df6)
+
+
 - The app is fully responsive, ensuring an optimal experience across various devices and screen sizes.
--  The app supports full CRUD (Create, Read, Update, Delete) operations, enabling users to add, view, modify, and remove tasks as needed.
+-  The app supports full CRUD (Create, Read, Update, Delete) operations, enabling users to add, view, modi
+fy, and remove tasks as needed.
 -  The app offers an intuitive interface that simplifies task management, with a clean design and minimal distractions for easy navigation.
 
+
 ## Wireframes
+
 ![Screenshot 2024-12-16 at 14 22 45](https://github.com/user-attachments/assets/6a8a8551-168d-4f42-b6dc-fc398aa83570)
 
 ![Screenshot 2024-12-19 at 13 50 02](https://github.com/user-attachments/assets/3f947c65-ffed-436b-9eae-443356be4b18)
