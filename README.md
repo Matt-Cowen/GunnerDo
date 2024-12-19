@@ -243,3 +243,34 @@ sqlparse==0.5.2
 urllib3==1.26.20
 
 whitenoise==5.3.0
+
+# **Credits**
+
+## **Tech Support**
+
+- [W3Schools](https://www.w3schools.com/) - Used to help understand certain aspects of python.
+
+- [Stack Overflow](https://stackoverflow.com/) - Used to detrmine whether other people have already figured out issues we were running into!
+
+- [ChatGPT](https://openai.com/gpt) - Used for example text on the site and plain English explanations of particularly tricky bits of code.
+
+- [Code Institute](https://codeinstitute.net/) - Taught me all I know, and provided the initial framework for the Recipe model, taken from the I think therefore I blog walkthrough project.
+
+---
+
+
+## **Media**
+
+- [GoogleFonts](https://fonts.google.com/)
+
+- [ChatGPT](https://chatgpt.com/) - ChatGPT was used to generate the logo artwork.
+
+- [Unsplash](https://unsplash.com/) - Unsplash was used to access free license imagery.
+
+---
+
+### **Acknowledgements**
+
+-Thank you to Alex for all his hard work.
+
+
