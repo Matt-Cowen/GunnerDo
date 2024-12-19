@@ -1,4 +1,6 @@
-UX
+<h1> Gunner Do </h1>
+
+## UX
 The UX was developed with the target user in mind. The target is a wide net, and as such the UX had to be accessible and attractive to a wide range of user.
 
 The users will be looking for:
@@ -11,26 +13,28 @@ The site admin will be looking for:
 
 an easy and intuitive way of managing content and users on the site.
 
-Scope
+## Scope
 Site Features
-Navigation Bar
+1. Navigation Bar
 The navigation bar appears on every page so users can easily navigate through the site. It adds an active class to the current url for better UX.
 Navigation bar has links for "Home", "Recipe Library", "Register" and "Login" when there is no logged in user.
 Navigation bar has links for "Home", "Recipe Library", "My Recipe Boook", "Add Recipe" and "Logout" when a user is logged in.
 If the user is logged in then their username will appear on the right hand side of the nav bar.
 The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size.
 
-Footer The footer, present on all pages, comprises of copyright information on the left hand side, and social links on the right.
+2. Footer
+The footer, present on all pages, comprises of copyright information on the left hand side, and social links on the right.
 
-Landing Page The landing page offers a simple hero section with a call to action to either start viewing recipes (available to both logged in and non-registered users) or to sign up (only displays if user is not logged in).
+3. Landing Page
+The landing page offers a simple hero section with a call to action to either start viewing recipes (available to both logged in and non-registered users) or to sign up (only displays if user is not logged in).
 
-Wireframes
-Database Schema
+## Wireframes
+## Database Schema
 
 Before I set to migrating any models to my database, I created an entity relationship diagram to help me see how the models would link together.
 The entity relationship diagrams were created using dbdiagram.io.
 
-ERD
+# ERD
 
 ![ERD](/media/ERD%20GunnerDo.png)
 
