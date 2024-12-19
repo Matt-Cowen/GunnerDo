@@ -47,7 +47,7 @@ function kickBall() {
     setTimeout(() => {
       // Consider a goal area within a specific region (x: 0-500, y: 0-100)
       if (randomX > 500 && randomX < 800 && randomY > 0 && randomY < 200) {
-        ball.style.animation = "none"; //Spin animation stop
+        ball.style.animationPlayState = 'paused'; // Pause the animation
         result.innerText = randomMessage;
         result.style.color = "black";
       }
