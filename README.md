@@ -60,16 +60,21 @@ Acceptance Criteria:
 Site Features
 1. Navigation Bar
 The navigation bar appears on every page so users can easily navigate through the site. It adds an active class to the current url for better UX.
-Navigation bar has links for "Home", "Recipe Library", "Register" and "Login" when there is no logged in user.
-Navigation bar has links for "Home", "Recipe Library", "My Recipe Boook", "Add Recipe" and "Logout" when a user is logged in.
+Navigation bar has links for "Home", "Tasks", "Register" and "Login" when there is no logged in user.
+Navigation bar has links for "Home", "Taks" and "Logout" when a user is logged in.
 If the user is logged in then their username will appear on the right hand side of the nav bar.
 The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size.
 
 2. Footer
 The footer, present on all pages, comprises of copyright information on the left hand side, and social links on the right.
 
-3. Landing Page
-The landing page offers a simple hero section with a call to action to either start viewing recipes (available to both logged in and non-registered users) or to sign up (only displays if user is not logged in).
+3. Log-In Page / Register page:
+- Gunner Do utilizes AllAuth for secure user authentication and authorization, allowing users to easily create accounts and log in to access their personalized to-do lists.
+
+4. Task List page:
+- The app is fully responsive, ensuring an optimal experience across various devices and screen sizes.
+-  The app supports full CRUD (Create, Read, Update, Delete) operations, enabling users to add, view, modify, and remove tasks as needed.
+-  The app offers an intuitive interface that simplifies task management, with a clean design and minimal distractions for easy navigation.
 
 ## Wireframes
 ## Database Schema
